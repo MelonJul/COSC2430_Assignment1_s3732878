@@ -1,0 +1,116 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Hanjun Lee
+ID: 3732878
+Acknowledgement: Every sources come from Amazon and all of the reference ar in the report -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link to css file -->
+    <link rel="stylesheet" href="Home Page.css">
+    <title>Main</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- <header> contain logo, page name, nav -->
+        <div class = "header">
+            <!-- Logo image -->
+            <img src="Assignment 1 Pictures/logo.png" 
+            alt="Logo" class="logo" width="50" height = "50">
+            <h1>Welcome to My Book!!</h1>
+        </div>
+        <hr>
+        <div class = "mobile-nav animation">☰</div>
+        <!-- Navigation bar -->
+        <nav class = "navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Novel Page.html">Novel</a></li>
+                <li><a href="Comic Page.html">Comic</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <!-- <Div> category-list -->
+    <div class = "category-list">
+        <!-- Category 1(Novel) -->
+        <a href = "Novel Page.html">
+            <h1>Novel</h1>
+        </a>
+        <section class = "section animation">
+            <!-- ul to arrange the items -->
+            <ul>
+                <!-- Each item image is linked to Book detail page -->
+                <a href = "Novel Page/Twilight.html" target="_blank">
+                    <li><img src = "Novel Image/Twilight/Twilight.jpg" alt = "Twilight" class = "animation"><h2> Twilight </h2></li>
+
+                </a>
+                <a href = "Novel Page/La Fille De Papier.html" target="_blank">
+                    <li><img src = "Novel Image/La fille de papier/La fille de papier.jpg" alt = "La Fille De Papier" class = "animation"><h2> La Fille De Papier </h2></li>
+                    
+                </a>
+                <a href = "Novel Page/Harry Potter.html" target="_blank">
+                    <li><img src = "Novel Image/Harry Potter/Harry Potter.jpg" alt = "Harry Potter" class = "animation"><h2> Harry Potter</h2></li>
+                </a>
+            </ul>
+        </section>
+
+        <br>
+        <!-- Category 2(Comic) -->
+        <a href = "Comic Page.html">
+            <h1>Comic</h1>
+        </a>
+        <section>
+             <!-- ul to arrange the items -->
+            <ul>
+                 <!-- Each item image is linked to Book detail page -->
+                <a href = "Comic Page/Demon Slayer.html" target="_blank">
+                    <li><img src = "Comic Image/Demon Slayer/Demon Slayer.jpg" alt = "Demon Slayer" class = "animation"></li>
+                    <h2> Demon Slayer </h2>
+                </a>
+                <a href = "Comic Page/Tokyo Ghoul.html" target="_blank">
+                    <li><img src = "Comic Image/Tokyo Ghoul/Tokyo Ghoul.jpg" alt = "Tokyo Ghoul" class = "animation"></li>
+                    <h2> Tokyo Ghoul </h2>
+                </a>
+                <a href = "Comic Page/Death Note.html" target="_blank">
+                    <li><img src = "Comic Image/Death Note/Death Note.jpg" alt = "Death Note" class = "animation"></li>
+                    <h2> Death Note </h2>
+                </a>
+               
+            </ul>
+        </section>
+    </div>
+    <br>
+    <br>
+    <div class = "video">
+        <h1>Weekly Video</h1>
+        <!-- Video -->
+        <video src= "Twilight-video.mp4" controls width="500" height="400" alt = "Interview"></video>
+        <h2>Twilight saga is released as a movie!!</h2>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class = "footer">
+            <img src="Assignment 1 Pictures/logo.png" 
+            alt="Logo" class="logo" width="50" height = "50">
+        </div>
+        <!-- Navigation to About Me, Privacy Policy, Terms, Copyright, Contant Me -->
+        <nav class = "footer-nav">
+         <a href="Footer/About Me.html">About Me</a>
+         <a href="Footer/Privacy Policy.html">Privacy Policy</a>
+         <a href="Footer/Terms.html">Terms</a>
+         <a href="Footer/Copyright.html">Copyright</a>
+         <a href="Footer/Contact Me.html">Contact Me</a>
+        </nav>
+    </footer>
+</body>
+</html>
