@@ -1,0 +1,308 @@
+/*-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Hanjun Lee
+ID: 3732878
+Acknowledgement: Every sources come from Amazon and all of the reference ar in the report*/
+
+/* Adding Custom font */
+@font-face {
+    font-family: "Custom";
+    src: url(Font/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Custom-Bold";
+    src: url(Font/Kanit-Bold.ttf);
+}
+/* Arranging all the elements in vertical */
+/* locating the elements in the middle of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #47555e;
+    margin: 0;
+
+}
+/* set the color of the h1 tags in white */
+/* using Custom font */
+h1{
+    color: white;
+    font-family: "Custom-Bold", sans-serif;
+}
+/* sizing the hr under the title of the page */
+hr{
+    min-width: 700px;
+}
+/* to make following header and navigation bar as user scrolling down */
+header{
+    position: sticky;
+    top: 0;
+    background-color: #47555e;
+}
+/* arranging the elements inside the header and footer on the center */
+.header, .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* making a space between logo and title */
+.header h1{
+    margin-left: 20px;
+}
+/* header class nav */
+/* arranging the elements in navigation bar in the middle */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7aa5d2;
+    color: white;
+    height: 25px;
+    border-radius: 5px;
+}
+/* removing the style of the ul */
+ .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+/* sizing the list items */
+ .navbar li{
+    margin: 0 40px;
+    font-size: 15px;
+ }
+/* removing the text-decoration of a tags(underline) and setting the color to white */
+/* using custom font */
+ .navbar a{
+    color: white;
+    font-family: "Custom", sans-serif;
+    text-decoration: none;
+ }
+/* Hamburger menu icon */
+ .mobile-nav{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #7aa5d2;
+    border-radius: 10px;
+    display: none;
+
+ }
+/* if the cursor hovers around a tags of navigation bar, changing the color of a tag */
+nav a:hover{
+    background-color: #4d6de3;
+    
+}
+/* ================ Bread Crumbs ============================*/
+/* styling .breakdcrumbs */
+/* using Custom font */
+
+span.breadcrumbs{
+    color: white;
+    font-family: "Custom", sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+}
+/* removing text-decoration (underline) of a tags */
+span.breadcrumbs a{
+    text-decoration: none;
+    color: white;
+}
+/* if the cursor hovers around a tags, changing the color of a tags */
+.breadcrumbs a:hover{
+    color: #4d6de3;
+}
+
+
+/* div.images */
+/* arranging images in the middle of images */
+div.images{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border: 3px solid #7aa5d2;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 80px;
+}
+/* set the size of big image */
+div.images img{
+    border-radius: 10px;
+    width: 225px;
+    height: 300px;
+}
+/* set the size of three small images */
+div.images ul img{
+    border-radius: 10px;
+    width: 75px;
+    height: 100px
+}
+/* removing  the style of ul */
+div.images ul{
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+}
+/*  if cursor hovers around three smaill images, change the size of image */
+div.images li img:hover{
+    width: 100px;
+    height: 132px;
+}
+/* set the time for .animation */
+.animation{
+    transition: 1s;
+}
+/* div.button */
+div.button {
+    margin-left: 70px;
+}
+/* set the color of "Book price: xxxUSD" to white */
+div.button span{
+    color: white;
+    margin: 0;
+}
+/* styling "Add to cart" button */
+div.button button{
+    display: block;
+    background-color: #7aa5d2;
+    color: white;
+    font-family: "Custom-Bold", sans-serif;
+    font-size: 30px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+/* is cursor hovers around button, change the colorof button */
+div.button button:hover{
+    background-color: #4d6de3;
+}
+
+/* =================div.iteminfo */
+/* set the text color of book title to white */
+#infotitle{
+    color: white;
+}
+/* styling div.iteminfo */
+div.iteminfo{
+    max-width: 765px;
+    border: 3px solid  #7aa5d2;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+/* set the color of "book description:" to white */
+#description{
+    color: white;
+    font-family: "Custom-Bold", sans-serif;
+    font-size: 25px;
+    padding: 0px;
+}
+/* set the content of book description to white and font-size 20px */
+#infocontent{
+    color: white;
+    font-family: "Custom", sans-serif;
+    font-size: 20px;
+}
+/* locating the footer */
+footer{
+    position: relative;
+    top: 100px;
+    padding-bottom: 100px;
+}
+/* locating the content of the footer in the middle */
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+ }
+ /* styling a tags of footer */
+ .footer-nav a{
+    background-color: #7aa5d2;
+    color: white;
+    font-family: "Custom", sans-serif;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 10px 15px;
+    border-radius: 10px;
+ }
+/* ====================== Mobile ============================== */
+/* Mobile device */
+/* if the screen size if smaller than 768px, rearrange the elements */
+@media (max-width: 767px){
+    /* change .navbar flex-direction: column to show navigation bar in vertical */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 120px;
+    }
+    /* change .navbar ul flex-direction: column to show navigation bar in vertical */
+    .navbar ul{
+        flex-direction: column;
+        padding-top: 8px;
+        margin-top: 10px;
+    }
+    /* adjusting margin of li to make it good */
+    .navbar li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    /* hiding navigation bar */
+    .navbar{
+        display: none;
+    }
+    /* showing hamburger meun icon */
+    .mobile-nav{
+        display: block;
+    }
+    /* when cursor hovers around the hamburger menu, show the navigation bar in vertical  */
+    .mobile-nav:hover + .navbar{
+        display: block;
+    }
+    /* Make being able to click the navigation bar */
+    .navbar:hover{
+        display: block;
+    }
+
+    /* Rearrange Book image & Add to cart Button */
+
+    /* Rearrange the big images and three small images in vertical */
+    .images{
+        flex-direction: column;
+    }
+
+    /* Giving the same spaces between three small images */
+    div.images ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /* arranging the list items in horizontal */
+    .images li{
+        float: left;
+        margin: 0 30px;
+    }
+
+    /* arranging "price:" and "xxxUSD" in a same line */
+    .images h1, h3{
+        display: inline;
+    }
+
+    /* margin: 0 to locate the "Add to cart" button on the middle of the div */
+    div.button {
+        margin: 0;
+    }
+}
+
+

@@ -1,0 +1,81 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Hanjun Lee
+ID: 3732878
+Acknowledgement: Every sources come from Amazon and all of the reference ar in the report -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home Page.css">
+    <title>Romance Novel</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- <header> contain logo, page name, nav -->
+        <div class = "header">
+            <!-- Logo image -->
+            <img src="Assignment 1 Pictures/logo.png" 
+            alt="Logo" class="logo" width="50" height = "50">
+            <h1>Romance Novel</h1>
+        </div>
+        <hr>
+        <div class = "mobile-nav">☰</div>
+        <!-- Navigation bar -->
+        <nav class = "navbar">
+            <ul>
+                <!-- list itme of Navigation bar -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Novel Page.html">Novel</a></li>
+                <li><a href="Comic Page.html">Comic</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <!-- Div to list Romonce Novel Items -->
+    <div class = "category-list">
+        <h1> Romance Novel </h1>
+        <section>
+            <!-- Ul to arrange item images linked to Book detail page -->
+            <ul>
+                <a href = "Novel Page/Twilight.html" target="_blank">
+                    <li><img src = "Novel Image/Twilight/Twilight.jpg" alt = "Twilight" class = "animation"><h2> Twilight </h2></li>
+
+                </a>
+                <a href = "Novel Page/La Fille De Papier.html" target="_blank">
+                    <li><img src = "Novel Image/La fille de papier/La fille de papier.jpg" alt = "La Fille De Papier" class = "animation"><h2> La Fille De Papier </h2></li>
+                    
+                </a>
+                <a href = "Novel Page/Romeo and Juliet.html" target="_blank">
+                    <li><img src = "Novel Image/Romeo and Juliet/Romeo and Juliet.jpg" alt = "Romeo and Juliet" class = "animation">
+                        <h2> Romeo and Juliet </h2>
+                    </li>
+                </a>
+            </ul>
+        </section>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <div class = "footer">
+            <!-- Logo of website -->
+            <img src="Assignment 1 Pictures/logo.png" 
+            alt="Logo" class="logo" width="50" height = "50">
+        </div>
+        <!-- Navigation to About Me, Privacy Policy, Terms, Copyright, Contant Me -->
+        <nav class = "footer-nav">
+            <a href="Footer/About Me.html">About Me</a>
+            <a href="Footer/Privacy Policy.html">Privacy Policy</a>
+            <a href="Footer/Terms.html">Terms</a>
+            <a href="Footer/Copyright.html">Copyright</a>
+            <a href="Footer/Contact Me.html">Contact Me</a>
+        </nav>
+    </footer>
+</body>
+</html>
